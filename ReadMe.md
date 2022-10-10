@@ -15,14 +15,14 @@
 
 `npm install knex axios express express-basic-auth express-handlebars path supertest jest`
 
-### setup for backend .env
+### Setup for backend .env
 
 - set 3 variables in .env
   `DB_NAME= YOUR DATABASE NAME`
   `DB_USERNAME= YOUR DATABASE USERNAME`
   `DB_PASSWORD= YOUR DATABASE PASSWORD`
 
-- set up dummy data, run:
+- set up dummy data, run in terminal:
   `knex migrate:latest`
   `knex seed:run`
 
