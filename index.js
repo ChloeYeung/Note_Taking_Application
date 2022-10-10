@@ -11,10 +11,6 @@ require('dotenv').config();
 const knexConfig = require("./knexfile")["development"];
 const knex = require ("knex")(knexConfig);
 
-
-//store require
-// const notes = require("./Stores/notes.json");
-
 //Basic Auth
 const AuthChallenger = require("./AuthChallenger.js")
 
@@ -44,7 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //express-handlebar set up
 app.engine('handlebars', engine({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
-app.set('views', './views'); //no need this line
+app.set('views', './views');
 
 //express server
 app.get("/", (req, res) => {
@@ -53,20 +49,10 @@ app.get("/", (req, res) => {
     res.render('index', {user:req.auth.user});
 })
 
-//knex config
-// const knex = require('knex')({
-//     client: 'postgresql',
-//     connection: {
-//         database: "fruits",
-//         user: "xccelerate",
-//         password: "password"
-//     }
-// });
-
-
 //Set up note router
 app.use("/api/notes", new NoteRouter(new noteService("../Stores/notes.json",fs, knex), express).router());
 
-app.listen(port, () => console.log(`App listening to port ${port}`));
+app.listen(port, () => console.log(`App listening to port ${port}, http://localhost:3000
+`));
 
 module.exports = app;

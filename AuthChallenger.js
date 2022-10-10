@@ -1,5 +1,3 @@
-// Declare the function Auth Challenger that takes in one parameter, the users
-
 const AuthChallenger = function(knex){
     return function (username, password, cb){
         let query = knex 
@@ -21,5 +19,5 @@ const AuthChallenger = function(knex){
         });
     };
 };
-// This code exports the function we hae just defined.
+
 module.exports = AuthChallenger;
