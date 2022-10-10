@@ -30,5 +30,6 @@
 - go to `http://localhost:3000`
 
 ### Account Login
-- :one: :bust_in_silhouette: sam  :key: sam
-- :two: :bust_in_silhouette: test  :key: test
+- :bust_in_silhouette: ac: sam  :key: pw: sam
+- or
+- :bust_in_silhouette: ac: test  :key: pw: test
