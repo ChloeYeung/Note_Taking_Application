@@ -3,7 +3,8 @@
 - Node JS, Database
 
 - Functionalities:
-:cloud: login 
+
+:cloud: Login 
 
 :cloud: Add, Edit, Delete notes
   
@@ -32,5 +33,5 @@
 
 ### Account Login
 - :bust_in_silhouette: ac: sam  :key: pw: sam
- or
+-  or
 - :bust_in_silhouette: ac: test  :key: pw: test
