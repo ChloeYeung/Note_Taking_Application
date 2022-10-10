@@ -6,7 +6,7 @@
 
 :cloud: Login 
 
-:cloud: Add, Edit, Delete notes
+:cloud: Show, Add, Edit, Delete notes
   
 <img width="1073" alt="notesTaking" src="https://user-images.githubusercontent.com/106992258/194902656-9808bc5d-772e-4c3b-91e7-945ba460e8c1.png">
 
